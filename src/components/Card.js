@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "../data";
-
+import "./card.css" 
 const Card = (props) =>{
     return(
         <div className = "Card-container" >
@@ -9,7 +9,7 @@ const Card = (props) =>{
                     <div className="card"> 
                     <div className="title"><h2>{card.title}</h2></div>
                     <img src = {card.image}></img>
-                    <div><p>{card.desc}</p></div>
+                    <div className="cardover"><p>{card.desc}</p></div>
                     </div>
           )})}
         </div>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+.Card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: skyblue;
+}
+.card{
+    /* height:400px ;
+    width: 500px; */
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 1rem;
+
+}
+.card img{
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+.cardover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    bottom:0;
+    right: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: none;
+}
+.card:hover .cardover{
+    transition: transform 1s ease-in-out;
+    transform: translateY(0);
+    display: block;
+}
+.title{
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Amatic SC', cursive;    font-size: 23px;
+}
