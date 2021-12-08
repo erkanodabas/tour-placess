@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../data";
 import "./card.css" 
 const Card = (props) =>{
+    <h1>Popular Tour Places</h1>
     return(
         <div className = "Card-container" >
           {data.map((card,index)=>{
